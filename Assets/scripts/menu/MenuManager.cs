@@ -10,15 +10,13 @@ public class MenuManager : MonoBehaviour
     public MenuControl[] menuControls;
     private void Start()
     {
+        //PlayerPrefs.DeleteAll();
         for (int i = 1; i < menuControls.Length; i++)
         {
-            if (menuControls[i - 1].isCompleted)
+            menuControls[i].isCompleted = PlayerPrefs.GetInt("LevelComplete_" + i) == 1;
+            if(i>0)
             {
-                menuControls[i].btn.GetComponent<Button>().interactable = true;
-            }
-            else
-            {
-                menuControls[i].btn.GetComponent<Button>().interactable = false;
+                menuControls[i].btn.GetComponent<Button>().interactable=menuControls[i-1].isCompleted;
             }
         }
     }

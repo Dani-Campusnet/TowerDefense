@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 1867351365298196713}
   - component: {fileID: -3718808273224792802}
   m_Layer: 0
-  m_Name: TurretEvo
+  m_Name: Aerial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,7 +160,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 9f774321f8f2c1f43a3cf965a99b4f72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e4149796701de840b49515c5068f186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -183,16 +183,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1caa338c53e2f384bbb34dba07d01bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 65
-  range: 3
+  cost: 75
+  range: 5
   detectMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 256
   areaRender: {fileID: 5476694364664257912}
-  areaColor: {r: 1, g: 0.18737705, b: 0.1372549, a: 0.5686275}
-  evolve: {fileID: 0}
-  rateTime: 0.7
-  damage: 10
+  areaColor: {r: 1, g: 0.703965, b: 0.13679248, a: 0.5686275}
+  evolve: {fileID: 7198154460112247407, guid: c602b334ac8db2a44a92652a2ba8de49, type: 3}
+  rateTime: 1
+  damage: 8
 --- !u!61 &-3718808273224792802
 BoxCollider2D:
   m_ObjectHideFlags: 0

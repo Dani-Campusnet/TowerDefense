@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +12,8 @@ public class GameManager : MonoBehaviour
      TextAsset map;
     static public int idMap;
     public Transform mapPosition;
+    MenuManager menumanager;
+    GameObject menu;
 
     List<List<int>> allMap;
     List<Vector2> corners;
@@ -104,7 +109,11 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        else { print("He ganado"); }
+        else {
+            print("Fin de la partida");
+            PlayerPrefs.SetInt("LevelComplete_" + idMap, 1);
+            SceneManager.LoadScene(3);
+        }
 
         if (currentTurret!=null)
         {

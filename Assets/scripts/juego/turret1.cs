@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public class turret0 : TurretManager
+public class turret1 : TurretManager
 {
     private EnemyManager currentEnemy;
     float fireRate;
@@ -16,7 +16,7 @@ public class turret0 : TurretManager
     private void Start()
     {
         areaRender.color = areaColor;
-        areaRender.transform.localScale = new Vector3(range * 2,range * 2,1);
+        areaRender.transform.localScale = new Vector3(range*2,range*2,1);
     }
     private void Update()
     {
@@ -55,17 +55,21 @@ public class turret0 : TurretManager
         Collider2D[] detect= Physics2D.OverlapCircleAll(transform.position,range, detectMask);
         if (detect.Length>0)
         {
-            float distance = Mathf.Infinity;
-            EnemyManager tempEnemy = null;
-            for (int i = 0; i < detect.Length; i++)
-            {
-                if (Vector2.Distance(transform.position, detect[i].transform.position) < distance)
+            
+                float distance = Mathf.Infinity;
+                EnemyManager tempEnemy = null;
+                 
+                for (int i = 0; i < detect.Length; i++)
                 {
-                    distance = Vector2.Distance(transform.position, detect[i].transform.position);
-                    tempEnemy = detect[i].GetComponent<EnemyManager>();
+                    if (Vector2.Distance(transform.position, detect[i].transform.position) < distance)
+                    {
+                        distance = Vector2.Distance(transform.position, detect[i].transform.position);
+                        tempEnemy = detect[i].GetComponent<EnemyManager>();
+                    }
                 }
-            }
-            currentEnemy = tempEnemy;
+                currentEnemy = tempEnemy;
+                
+            
         }
     }
     void AttackEnemy()

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ac94c1baefd31040842542759b1b36d, type: 3}
-  m_Name: Wave0
+  m_Name: Wave2
   m_EditorClassIdentifier: 
   waves:
   - enemies:
@@ -19,20 +19,20 @@ MonoBehaviour:
     - enemy: {fileID: 5906931158917760761, guid: 10a1297aa9e184b45bb1d14885e620bc, type: 3}
       time: 2
     - enemy: {fileID: 5906931158917760761, guid: 10a1297aa9e184b45bb1d14885e620bc, type: 3}
-      time: 3
+      time: 2
     - enemy: {fileID: 5906931158917760761, guid: 10a1297aa9e184b45bb1d14885e620bc, type: 3}
-      time: 3
+      time: 2
   - enemies:
-    - enemy: {fileID: 5906931158917760761, guid: 10a1297aa9e184b45bb1d14885e620bc, type: 3}
-      time: 2
-    - enemy: {fileID: 5906931158917760761, guid: 10a1297aa9e184b45bb1d14885e620bc, type: 3}
-      time: 2
-    - enemy: {fileID: 5906931158917760761, guid: c917ff71275a4624c8455288554fad7d, type: 3}
-      time: 3
-  - enemies:
-    - enemy: {fileID: 5906931158917760761, guid: 10a1297aa9e184b45bb1d14885e620bc, type: 3}
-      time: 2
-    - enemy: {fileID: 5906931158917760761, guid: 10a1297aa9e184b45bb1d14885e620bc, type: 3}
+    - enemy: {fileID: 7242484155841082825, guid: d43b70c8aa22606419819d540cd995db, type: 3}
       time: 2
     - enemy: {fileID: 7242484155841082825, guid: d43b70c8aa22606419819d540cd995db, type: 3}
+      time: 2
+    - enemy: {fileID: 7242484155841082825, guid: d43b70c8aa22606419819d540cd995db, type: 3}
+      time: 2
+  - enemies:
+    - enemy: {fileID: 5906931158917760761, guid: c917ff71275a4624c8455288554fad7d, type: 3}
+      time: 3
+    - enemy: {fileID: 5906931158917760761, guid: c917ff71275a4624c8455288554fad7d, type: 3}
+      time: 3
+    - enemy: {fileID: 5906931158917760761, guid: c917ff71275a4624c8455288554fad7d, type: 3}
       time: 3

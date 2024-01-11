@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5906931158917760711}
   - component: {fileID: 5906931158917760760}
   - component: {fileID: 4851217775518099157}
-  m_Layer: 6
-  m_Name: Enemy0
+  m_Layer: 8
+  m_Name: Enemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 301c59c6c95986f4a81f76b6d7dc57b1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 798e5a3d867ba7e4eaac6e5f8f0562b3, type: 3}
+  m_Color: {r: 0, g: 0.9019608, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   rotationSpeed: 900
   life: 20
   damage: 1
-  coins: 30
+  coins: 45
 --- !u!61 &4851217775518099157
 BoxCollider2D:
   m_ObjectHideFlags: 0
